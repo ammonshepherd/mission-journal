@@ -1,4 +1,3 @@
-_site
-.sass-cache
-.jekyll-metadata
-NameChanger.md
+pysite.py
+server.py
+.DS_Store

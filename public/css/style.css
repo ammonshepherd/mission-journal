@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(54, 132, 211);
+}
+
+#md-wrap {
+    margin: 2rem auto;
+    width: 800px;
+    padding: 20px;
+    background-color: white;
+}
+
+#yaml {
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin: 2rem auto;
+    padding: 20px;
+    width: 50vw;
+    background-color: white;
+}
