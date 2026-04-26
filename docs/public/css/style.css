@@ -1,19 +1,90 @@
 body {
     background-color: rgb(54, 132, 211);
+    font-family: "Google Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "GRAD" 0;
 }
 
-#md-wrap {
+header {
     margin: 2rem auto;
-    width: 800px;
+    width: 80vw;
     padding: 20px;
     background-color: white;
-}
-
-#yaml {
-    border: 1px solid grey;
     border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    margin: 18px;
+}
+header nav a {
+    padding: 10px;
+    color: #ff8400;
+    text-decoration: none;
+}
+header nav a:hover {
+    background-color: #ff8400;
+    color: white;
+}
+
+main {
     margin: 2rem auto;
+    width: 80vw;
     padding: 20px;
-    width: 50vw;
     background-color: white;
+    line-height: 1.5;
+}
+
+.post_nav nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.post_nav h3 {
+    text-align: center;
+}
+.post_nav h3 a {
+    color: white;
+    text-decoration: none;
+}
+.post_nav h3 a:hover {
+    color:#ff8400;
+    text-decoration: underline;
+}
+
+.post_nav nav p {
+    background: white;
+    padding: 20px;
+    margin: 4px;
+    border-radius: 4px;
+}
+
+.post_nav nav p a {
+    text-decoration: none;
+}
+.post_nav nav p a:hover {
+    color:#ff8400;
+    text-decoration: underline;
+}
+.posts-index {
+    display: flex;
+    flex-flow: column;
+}
+.posts-index a {
+    text-decoration: none;
+    color: green;
+}
+.posts-index a:hover {
+    color: blue;
+    text-decoration: underline;
+
 }

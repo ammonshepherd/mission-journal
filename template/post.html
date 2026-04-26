@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission Journal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/style.css">
+</head>
+<body>
+    <header>
+        <img src="/public/images/hamburg-coat-of-arms.jpg">
+        <h1>Mission Journal</h1>
+        <nav id="navigation">
+            <a href="/">HOME</a>
+            <a href="/journal/">JOURNAL</a>
+        </nav>
+    </header>
+    <main>
+        <h1>{{date}}</h1>
+
+        {> CONTENT <}
+
+    </main>
+    <div class="post_nav">
+        <h3><a href="/journal/">Entries</a></h3>
+        <nav>
+            {% if prev_post_url %}
+                <p><a href="{{ prev_post_url }}">← {{ prev_post_title }}</a></p>
+            {% endif %}
+            
+            {% if next_post_url %}
+                <p><a href="{{ next_post_url }}">{{ next_post_title }} →</a></p>
+            {% endif %}
+        </nav>
+    </div>
+</body>
+</html>
