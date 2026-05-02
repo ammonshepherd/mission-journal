@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mission Journal</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{base_url}}/public/css/style.css">
-</head>
-<body>
+{% extends "base.html" %}
+{% block title %}Mission Journal{% endblock %}
+{% block content %}
     <header>
         <img src="{{base_url}}/public/images/hamburg-coat-of-arms.jpg">
         <div>
@@ -24,8 +15,7 @@
     </header>
     <main>
 
-        {> CONTENT <}
+        {{ content }}
 
     </main>
-</body>
-</html>
+{% endblock %}

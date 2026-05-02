@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mission Journal</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{base_url}}/public/css/style.css">
-</head>
-<body>
+{% extends "base.html" %}
+{% block title %}Mission Journal - {{title}}{% endblock %}
+{% block content %}
     <header>
         <img src="{{base_url}}/public/images/hamburg-coat-of-arms.jpg">
         <h1>Mission Journal</h1>
@@ -19,9 +10,9 @@
         </nav>
     </header>
     <main>
-        <h1>{{date}}</h1>
+        <h1>{{date}} - {{title}}</h1>
 
-        {> CONTENT <}
+        {{ content }}
 
     </main>
     <div class="post_nav">
@@ -36,5 +27,4 @@
             {% endif %}
         </nav>
     </div>
-</body>
-</html>
+{% endblock %}
