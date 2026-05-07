@@ -10,10 +10,12 @@
         </nav>
     </header>
     <main>
-        <h1>{{date}} - {{title}}</h1>
+        <h1 class="post-title">{{title}}</h1>
+        <span class="post-date">{{date | datetime("%A, %b %d, %Y") }}</span>
 
         {{ content }}
 
+        <img class="post-location" src="{{base_url}}/public/images/{{location}}.webp">
     </main>
     <div class="post_nav">
         <h3><a href="{{base_url}}/journal/">Entries</a></h3>

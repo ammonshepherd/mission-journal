@@ -109,3 +109,17 @@ details[open] summary {
   border-bottom: 1px solid #aaaaaa;
   margin-bottom: 0.5em;
 }
+
+.post-title {
+    margin: 5px;
+}
+.post-date {
+    margin-left: 20px;
+    margin-bottom: 30px;
+    padding: 5px 15px;
+    background-color:#def;
+    width: 30vw;
+}
+.post-location {
+    width: 100px;
+}
