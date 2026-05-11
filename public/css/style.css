@@ -5,6 +5,7 @@ body {
     font-weight: 400;
     font-style: normal;
     font-variation-settings: "GRAD" 0;
+    font-size: 1.3rem;
 }
 
 header {
@@ -110,6 +111,16 @@ details[open] summary {
   margin-bottom: 0.5em;
 }
 
+.heading {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+#location {
+    margin-top: 22px;
+}
+
 .post-title {
     margin: 5px;
 }
@@ -122,4 +133,7 @@ details[open] summary {
 }
 .post-location {
     width: 100px;
+    vertical-align: middle;
+    border: 1px solid #eee;
+    border-radius: 4px;
 }

@@ -3,12 +3,16 @@
 {% block content %}
     <header>
         <img src="{{base_url}}/public/images/hamburg-coat-of-arms.jpg">
-        <h1>JOURNAL ENTRIES</h1>
+        <div>
+            <h1>Mission Journal</h1>
+            <span>Germany Hamburg, April 10, 1996 - April 4, 1998</span>
+        </div>
         <nav id="navigation">
             <a href="{{base_url}}/">HOME</a>
         </nav>
     </header>
     <main>
+        <h2>Journal Index</h2>
         <div class="posts-index">
                 {{ content }}
         </div>
