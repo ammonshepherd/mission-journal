@@ -16,7 +16,7 @@ header {
     border-radius: 10px;
     text-align: center;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column;
     justify-content: space-between;
     align-items: center;
 }
@@ -113,14 +113,17 @@ details[open] summary {
 
 .heading {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column;
     justify-content: space-between;
     margin-bottom: 22px;
+    text-align: center;
 }
 #location {
     margin-top: 22px;
+    border: 1px solid #fed;
+    border-radius: 4px;
+    padding: 8px;
 }
-
 .post-title {
     margin: 5px;
 }
@@ -136,4 +139,45 @@ details[open] summary {
     vertical-align: middle;
     border: 1px solid #eee;
     border-radius: 4px;
+}
+
+@media (min-width: 1000px) { 
+    header {
+        margin: 2rem auto;
+        width: 60vw;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        text-align: center;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header nav {
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: row wrap;
+        margin: 18px;
+    }
+    main {
+        margin: 2rem auto;
+        width: 60vw;
+        padding: 20px;
+        background-color: white;
+        line-height: 1.5;
+    }
+
+    .heading {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin-bottom: 22px;
+    }
+    #location {
+        margin-top: 22px;
+        border: 1px solid #fed;
+        border-radius: 4px;
+        padding: 8px;
+    }
 }
