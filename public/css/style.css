@@ -173,6 +173,7 @@ details[open] summary {
         flex-flow: row wrap;
         justify-content: space-between;
         margin-bottom: 22px;
+        text-align: left;
     }
     #location {
         margin-top: 22px;
