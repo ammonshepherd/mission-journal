@@ -1,3 +1,6 @@
+:root {
+    --width: 80vw;
+}
 body {
     background-color: rgb(54, 132, 211);
     font-family: "Google Sans", sans-serif;
@@ -10,7 +13,7 @@ body {
 
 header {
     margin: 2rem auto;
-    width: 80vw;
+    width: var(--width);
     padding: 20px;
     background-color: white;
     border-radius: 10px;
@@ -38,7 +41,7 @@ header nav a:hover {
 
 main {
     margin: 2rem auto;
-    width: 80vw;
+    width: var(--width);
     padding: 20px;
     background-color: white;
     line-height: 1.5;
@@ -141,6 +144,24 @@ details[open] summary {
     border-radius: 4px;
 }
 
+#footer {
+    background-color:rgb(48, 122, 195);
+    box-shadow: 1px 1px 1px rgb(34, 107, 181);
+    border-radius: 8px;
+    width: var(--width);
+    margin: 2rem auto;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    a {
+        color: rgb(134, 217, 242);
+        text-decoration: none;
+    }
+    a:hover {
+        color: #ff8400;
+    }
+}
+
 @media (min-width: 1000px) { 
     header {
         margin: 2rem auto;
@@ -166,6 +187,11 @@ details[open] summary {
         padding: 20px;
         background-color: white;
         line-height: 1.5;
+    }
+    #footer {
+        margin: 2rem auto;
+        width: 60vw;
+        padding: 20px;
     }
 
     .heading {
