@@ -17,26 +17,30 @@ header {
     padding: 20px;
     background-color: white;
     border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(152, 152, 152);
     text-align: center;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
     align-items: center;
-}
-header nav {
-    display: flex;
-    justify-content: space-evenly;
-    flex-flow: row wrap;
-    margin: 18px;
-}
-header nav a {
-    padding: 10px;
-    color: #ff8400;
-    text-decoration: none;
-}
-header nav a:hover {
-    background-color: #ff8400;
-    color: white;
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: row wrap;
+        margin: 18px;
+    }
+    nav a {
+        padding: 10px;
+        color: #ff8400;
+        text-decoration: none;
+    }
+    nav a:hover {
+        background-color: #ff8400;
+        color: white;
+    }
+    #logo {
+        width: 150px;
+    }
 }
 
 main {
@@ -45,6 +49,20 @@ main {
     padding: 20px;
     background-color: white;
     line-height: 1.5;
+}
+
+img {
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 4px 4px 8px grey;
+}
+.caption {
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+    font-style: italic;
 }
 
 .post_nav nav {
@@ -142,6 +160,17 @@ details[open] summary {
     vertical-align: middle;
     border: 1px solid #eee;
     border-radius: 4px;
+}
+
+.codehilite {
+    all: unset;
+    display: block;
+    margin: 10px auto;
+    padding: 20px;
+    background-color:rgb(227, 227, 227);
+    border-radius: 20px;
+    font-weight: 100;
+    font-size: 1rem;
 }
 
 #footer {
