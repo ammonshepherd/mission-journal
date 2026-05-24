@@ -40,6 +40,8 @@ header {
     }
     #logo {
         width: 150px;
+        box-shadow: none;
+        border-radius: 0px;
     }
 }
 
