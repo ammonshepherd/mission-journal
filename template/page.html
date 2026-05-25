@@ -16,5 +16,17 @@
 
         {{ content }}
 
+        {% if latest_post %}
+            <h2>Latest Post </h2>
+            <div id="latest_post">
+
+                <a href="{{ base_url }}/{{ latest_post.url }}">{{ latest_post.title }}</a>
+
+                <p>{{ latest_post.date|datetime("%B %d, %Y") }}</p>
+
+                {{ latest_post.content }}
+            </div>
+        {% endif %}
+
     </main>
 {% endblock %}
